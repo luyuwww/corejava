@@ -1,0 +1,41 @@
+1. 配置 Conn.java里面相关参数哦
+	private static String driverName = "net.sourceforge.jtds.jdbc.Driver";
+	private static String url = "jdbc:jtds:sqlserver://localhost:1433/sg";
+	private static String userName = "sa";
+	private static String passWord = "sa";
+2. 配置jar位置.在 setenv.bat
+	E:\WORK\java\jar\JDBCDRIVER\sqlseverdirver\jtds-1.2.jar 改成自己的地址和jar名称
+
+3. 运行 cmd 
+   cd ly 目录 
+   setenv.bat 
+   javac -d . ./*.java  编译java文件
+   java ly.Conn   运行.看到下面链接打出来
+   net.sourceforge.jtds.jdbc.ConnectionJDBC3@55e83f9
+
+
+
+sqlserver
+private static String driverName = "net.sourceforge.jtds.jdbc.Driver";
+private static String url = "jdbc:jtds:sqlserver://localhost:1433/sg";
+private static String userName = "sa";
+private static String passWord = "sa";
+
+db2
+private static String driverName = "com.ibm.db2.jcc.DB2Driver";
+private static String url = "jdbc:db2://10.1.228.24:50000/webappdb";
+private static String userName = "ssss";
+private static String passWord = "vvv";
+
+oracle
+private static String driverName = "oracle.jdbc.driver.OracleDriver";
+private static String url = "jdbc:oracle:thin:@127.0.0.1:1521:orcl";
+private static String userName = "thams";
+private static String passWord = "ams2000";
+
+mysql:
+private static String driverName = "com.mysql.jdbc.Driver";
+private static String url = "jdbc:mysql://localhost:3306/sch";
+private static String userName = "thams";
+private static String passWord = "ams2000";
+
